@@ -1,0 +1,47 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: auto;
+    width: 100%;
+}
+
+.headerText {
+    position: absolute;
+    top: 40%;
+    color: black;
+    font-size: 30px;
+    width: 500px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.billText {
+    position: absolute;
+    top: 55%;
+    color: black;
+    width: 500px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.billHead-btn {
+    position: absolute;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    top: 70%;
+    left: 18%;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.billHead-btn:hover {
+    transform: scale(1.2);
+}
+
+#navBar {
+    width: 200px;
+    text-align: center;
+    border: 1px white;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
