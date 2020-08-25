@@ -2,34 +2,47 @@
     position: relative;
     text-align: center;
     color: white;
-    height: auto;
+}
+
+.groundhogPic {
     width: 100%;
+    height: auto;
 }
 
 .headerText {
     position: absolute;
-    top: 40%;
+    top: 30%;
     color: black;
-    font-size: 30px;
-    width: 500px;
+    font-size: 175%;
+    width: 45%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.activityText {
+    top: 30%;
+    left: 2%;
+    position: absolute;
+    color: black;
+    font-size: 175%;
+    width: 45%;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 .billText {
     position: absolute;
-    top: 55%;
+    top: 50%;
     color: black;
-    width: 500px;
+    width: 50%;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 .billHead-btn {
     position: absolute;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    border-radius: 100%;
+    width: 20%;
+    height: 20%;
     top: 70%;
-    left: 18%;
+    left: 14%;
     cursor: pointer;
     transition: transform .2s;
 }
@@ -37,11 +50,57 @@
     transform: scale(1.2);
 }
 
-#navBar {
-    width: 200px;
+.activity-btn:hover {
+    transform: scale(1.0)
+}
+
+.activity-btn {
+    width: 28%;
+    height: 20%;
     text-align: center;
     border: 1px white;
     background-color: black;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
+    transition: transform .2s;
+    margin: 1%;
+    padding: 5%;
 }
+
+nav {
+    top: 55%;
+    left: 2%;
+    position: absolute;
+    width: 50%;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+#modal {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+
+#modal-textbox {
+    background-color: white;
+    height: 350px;
+    width: 550px;
+    border-radius: 2px;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px black;
+    padding: 2%;
+    line-height: 120%;
+    display: none;
+}
+
+
+
