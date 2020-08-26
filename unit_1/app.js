@@ -1,9 +1,8 @@
 console.log("JS file is connected")
 // GLOBAL VARIABLES
 const $modal = $('#modal')
-const $modalTextbox = $('#modal-textbox')
 const activities = ['education', 'recreational', 'social', 'diy', 'charity', 'cooking', 'relaxation', 'music', 'busywork']
-let $activityBTN;
+
 
 // FUNCTIONS
 const activityButton = () => {
@@ -12,15 +11,15 @@ const activityButton = () => {
     $('.billText').hide()
     const $h1 = $('<h1>').text('Bill wants to know what type of activity you are interested in').addClass('activityText').prependTo('.container')
     for (let i = 0; i<activities.length; i++){
-        $activityBTN = $('<button>' + activities[i] + '</button>').attr('id', activities[i]).append('nav')
+        $activityBTN = $('<button>' + activities[i] + '</button>').attr('id', activities[i]).appendTo('nav')
     }  
 }
 const openModal = () => {
   $modal.css('display', 'block')
 }
-console.log($activityBTN)
-$('button').on('click', (event) => {
-    // openModal()
+
+const handleData = () => { 
+    openModal()
     console.log($(event.target))
     event.preventDefault();
     let activityChoice = $(event.target).attr('id');
@@ -30,22 +29,28 @@ $('button').on('click', (event) => {
            url: "http://www.boredapi.com/api/activity?type=" + activityChoice
        }).then(
            (data)=>{
-               $('#activity').html(data.activity);
+               $('#activity').text("How about you " + data.activity);
                $('#accessibility').html(data.accessibility);
                $('#type').html(data.type);
                $('#participants').html(data.participants);
-               $('#price').html(data.price)
+               if(data.price < 0.1){
+                    $('#price').text("FREE!!")
+               } else {
+                    $('#price').text(data.price)
+               }
            },
            ()=>{
                console.log('bad request');
            }
        );
-}) 
+}
+ 
 
 
 
 // EVENT LISTENERS
-$('.billHead-btn').on('click', activityButton)
+$('.billHead-btn').on('click', activityButton);
+$('nav').on("click", "button", handleData)
 
 
 
