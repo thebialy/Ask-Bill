@@ -1,26 +1,29 @@
 console.log("JS file is connected")
 // GLOBAL VARIABLES
 const $modal = $('#modal')
-
+const $modalTextbox = $('#modal-textbox')
 const activities = ['education', 'recreational', 'social', 'diy', 'charity', 'cooking', 'relaxation', 'music', 'busywork']
+let $activityBTN;
 
+// FUNCTIONS
 const activityButton = () => {
     $('.billHead-btn').hide()
     $('.headerText').hide()
     $('.billText').hide()
-    const $h1 = $('<h1>').text('Bill wants to know what type of activity you are interested in').addClass('activityText').appendTo('.container')
+    const $h1 = $('<h1>').text('Bill wants to know what type of activity you are interested in').addClass('activityText').prependTo('.container')
     for (let i = 0; i<activities.length; i++){
-        const $activityBTN = $('<button>' + activities[i] + '</button>').addClass("activity-btn").prependTo('nav')
+        $activityBTN = $('<button>' + activities[i] + '</button>').attr('id', activities[i]).append('nav')
     }  
 }
 const openModal = () => {
-  ('#modal').css('display', 'block')
-  ('#modal-textbox').css('display', 'block')
+  $modal.css('display', 'block')
 }
-
-$(".activity-btn").on("click", () => {
-    openModal()
-    const activityChoice = $(".activity-btn").text();
+console.log($activityBTN)
+$('button').on('click', (event) => {
+    // openModal()
+    console.log($(event.target))
+    event.preventDefault();
+    let activityChoice = $(event.target).attr('id');
     console.log(activityChoice)
 
     $.ajax({
@@ -38,7 +41,6 @@ $(".activity-btn").on("click", () => {
            }
        );
 }) 
-
 
 
 
