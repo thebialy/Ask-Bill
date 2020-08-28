@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wiph=device-wiph, initial-scale=1.0">
     <title>Ask Bill</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
     <script src="app.js" charset="utf-8" defer></script>
@@ -17,22 +17,17 @@
         <img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_2188,w_3900,x_0,y_313/f_auto,q_auto,w_1100/v1554703342/shape/mentalfloss/54821-gettyimages-466543405.jpg" class="groundhogPic">
         <nav></nav>
         <div id="modal">
+            <h1 class="modal-h1">Bill browsed through the local newspaper and tore out an ad for an activity you might like!</h1>
             <div id="modal-textbox">
-                <h1 class="modal-h1">Bill thinks you would enjoy....</h1>
-                <dl>
-                    <dt id="activity">Activity:</dt>
-    
-                    <dt id="accessibility">Accessibilty:</dt>
-                    
-                    <dt>Type:</dt>
-                    <dd id="type"></dd>
-    
-                    <dt>Participants:</dt>
-                    <dd id="participants"></dd>
-    
-                    <dt>Price:</dt>
-                    <dd id="price"></dd>
-                </dl>
+                <!-- <img src="newspaper.png" id="classified"> -->
+                <div id="modal-ad">
+                    <p>Activity type - <span id="type"></span></p>
+                    <h2 id="activity"></h2>   
+                        <p>This is the perfect idea to combat the Groundhog's Day feeling caused by quarantine. The activity is  <span id="accessibility"></span> to access. <span id="participants"></span> Lastly I'm sure you are wondering how much it will cost. <span id="price"></span> Have fun!</p>
+                <div id="modal-footer">
+                    <a href="#" id="close">Pick a different activity type</a>
+                </div>
+                </div>
             </div>
         </div>
     </div>

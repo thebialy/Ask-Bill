@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&display=swap');
+
 .container {
     position: relative;
     text-align: center;
     color: white;
+    
 }
 
 .groundhogPic {
@@ -41,7 +44,7 @@
     border-radius: 100%;
     width: 20%;
     height: 20%;
-    top: 70%;
+    top: 65%;
     left: 14%;
     cursor: pointer;
     transition: transform .2s;
@@ -69,7 +72,7 @@ button {
 }
 
 nav {
-    top: 55%;
+    top: 50%;
     left: 2%;
     position: absolute;
     width: 50%;
@@ -91,16 +94,49 @@ nav {
 }
 
 #modal-textbox {
+    background-image: url("newspaper.png");
+    background-size: cover;
     color: black;
-    background-color: white;
-    height: fit-content;
-    width: 550px;
-    border-radius: 2px;
+    height: 45%;
+    width: 45%;
     margin: 150px auto;
-    box-shadow: 0 2px 2px black;
     padding: 2%;
     line-height: 120%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+}
+
+#modal-h1 {
+    font-weight: bolder;
+
+}
+
+/* #classified {
+    width: 550px;
+    height: fit-content;
+} */
+
+#modal-footer{
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+}
+
+#close {
+    align-self: flex-end;
+}
+
+#modal-ad{
+    top: 11%;
+    right: 39.5%;
+    width: 21%;
+    height: 41%;
+    position: fixed;
+    margin: 150px auto;
+}
+
+p {
+    font-size: smaller;
 }
 
 
