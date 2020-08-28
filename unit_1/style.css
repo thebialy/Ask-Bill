@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 .container {
     position: relative;
     text-align: center;
-    color: white;
-    
+    color: black;
+    margin: 0%;
 }
 
 .groundhogPic {
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 
 .headerText {
@@ -82,7 +84,7 @@ nav {
 }
 
 #modal {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
     left: 0;
@@ -99,7 +101,7 @@ nav {
     color: black;
     height: 45%;
     width: 45%;
-    margin: 150px auto;
+    margin: 9.5% auto;
     padding: 2%;
     line-height: 120%;
     font-family: 'IBM Plex Mono', monospace;
@@ -108,13 +110,9 @@ nav {
 
 #modal-h1 {
     font-weight: bolder;
-
+    opacity: 0;
+    margin-top: 15%;
 }
-
-/* #classified {
-    width: 550px;
-    height: fit-content;
-} */
 
 #modal-footer{
     display: flex;
@@ -123,11 +121,12 @@ nav {
 }
 
 #close {
-    align-self: flex-end;
+    margin-top: 38%;
+    margin-left: 11%;
 }
 
-#modal-ad{
-    top: 11%;
+#modal-ad {
+    top: 13%;
     right: 39.5%;
     width: 21%;
     height: 41%;
@@ -139,5 +138,11 @@ p {
     font-size: smaller;
 }
 
+.modal-h1 {
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: -4%;
+}
 
 

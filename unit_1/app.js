@@ -61,9 +61,6 @@ const handleData = () => {
        );
 }
  
-
-
-
 // EVENT LISTENERS
 $('.billHead-btn').on('click', activityButton);
 $('nav').on("click", "button", handleData)
@@ -71,7 +68,3 @@ $closeBtn.on("click", closeModal)
 
 
 
-
-// STRETCH
-// 1. Have page load with gif playing a song then fades to the main content of the page
-// 2. have the modal open up inside a classfied ad news template 
