@@ -23,7 +23,7 @@
 }
 
 .activityText {
-    top: 30%;
+    top: 26%;
     left: 2%;
     position: absolute;
     color: black;
@@ -73,12 +73,11 @@ button {
 }
 
 nav {
-    top: 50%;
+    top: 44%;
     left: 2%;
     position: absolute;
     width: 50%;
     display: flex;
-    align-content: space-between;
     flex-wrap: wrap;
 }
 
