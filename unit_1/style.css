@@ -46,8 +46,8 @@
     border-radius: 100%;
     width: 20%;
     height: 20%;
-    top: 65%;
-    left: 14%;
+    top: 56%;
+    left: 12%;
     cursor: pointer;
     transition: transform .2s;
 }
