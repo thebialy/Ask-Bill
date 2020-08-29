@@ -34,10 +34,11 @@
 
 .billText {
     position: absolute;
-    top: 50%;
+    top: 41%;
     color: black;
     width: 50%;
     font-family: 'Roboto Condensed', sans-serif;
+    left: -3%;
 }
 
 .billHead-btn {
