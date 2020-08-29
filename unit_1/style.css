@@ -105,6 +105,8 @@ nav {
     line-height: 120%;
     font-family: 'IBM Plex Mono', monospace;
     text-align: center;
+    min-width: 300px;
+    min-height: 300px;
 }
 
 #modal-footer{
