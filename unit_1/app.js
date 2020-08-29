@@ -1,5 +1,5 @@
 console.log("JS file is connected")
-// GLOBAL VARIABLES
+
 const $modal = $('#modal')
 const $closeBtn = $('#close')
 const activities = ['education', 'recreational', 'social', 'diy', 'charity', 'cooking', 'relaxation', 'music', 'busywork']
@@ -31,7 +31,7 @@ const handleData = () => {
     console.log(activityChoice)
     
     $.ajax({
-           url: "http://www.boredapi.com/api/activity?type=" + activityChoice
+           url: "https://www.boredapi.com/api/activity?type=" + activityChoice
        }).then(
            (data)=>{
                $('#activity').text(data.activity);

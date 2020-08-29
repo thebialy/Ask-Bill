@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Architects+Daughter&family=Fjalla+One&display=swap');
 
 .container {
     position: relative;
@@ -11,7 +11,6 @@
 
 .groundhogPic {
     width: 100%;
-    /* height: auto; */
 }
 
 .headerText {
@@ -108,12 +107,6 @@ nav {
     text-align: center;
 }
 
-#modal-h1 {
-    font-weight: bolder;
-    opacity: 0;
-    margin-top: 15%;
-}
-
 #modal-footer{
     display: flex;
     text-align: center;
@@ -139,6 +132,8 @@ p {
 }
 
 .modal-h1 {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Architects Daughter', cursive;
     font-family: 'Fjalla One', sans-serif;
     color: white;
     margin-top: 5%;
